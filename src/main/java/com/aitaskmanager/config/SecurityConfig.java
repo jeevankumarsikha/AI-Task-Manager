@@ -53,6 +53,7 @@ public class SecurityConfig {
             .csrf(AbstractHttpConfigurer::disable)
             .headers(headers -> headers.frameOptions(frame -> frame.disable())) // allow H2 console
             .authorizeHttpRequests(auth -> auth
+                .requestMatchers("/", "/index.html").permitAll()
                 .requestMatchers("/api/auth/**").permitAll()
                 .requestMatchers("/api/ai/**").permitAll()
                 .requestMatchers("/h2-console/**").permitAll()
