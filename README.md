@@ -1,5 +1,7 @@
 # AI-Task-Manager
 
+🔗 **Live demo:** https://ai-task-manager-1-w570.onrender.com (free tier — first request may take ~50s to wake)
+
 A production-style **Java 17 + Spring Boot 3** REST API for managing tasks, secured with **JWT** authentication and backed by an in-memory **H2** database. It also exposes a simulated **AI summarization** endpoint that condenses a task description into a one-line summary without calling any external service.
 
 The project is structured with **clean, layered architecture** (Controller → Service → Repository, with separate DTO and Security layers) and is ready to build and run inside **VS Code** with the Maven and Java extensions.
